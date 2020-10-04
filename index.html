@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div>
+        <h3>Learn vue js 2.0 | Awesome Framework</h3>
+        <div id="app1">
+            <p>This is app1</p>
+            <p>Name:{{ name }}</p>
+            <p>Email:{{ email }}</p>
+        </div>
+
+        <div id="app2"> 
+            <p>This is app2</p>
+            <p>Name:{{ name }}</p>
+            <p>Email:{{ email }}</p>
+
+        </div>
+    </div>
+
+<script>
+
+     var obj = new Vue({
+     el: '#app1',
+        data: {
+        name: 'Amir',
+        email:'amir@gmail.com'
+
+    }
+ })
+
+    var obj = new Vue({
+    el: '#app2',
+    data: {
+        name: 'Amirul',
+        email: 'amirul@gmail.com'
+
+    }
+})
+    </script>
+
+    
+</body>
+</html>
